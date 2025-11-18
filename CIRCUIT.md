@@ -1,20 +1,16 @@
-# LabVIEW VI — Circuit Schematic
+# Labview Bootcamp Learn Labview With Practical Examples — Circuit Notes
 
-- Course: LabVIEW Bootcamp: Learn LabVIEW with Practical Examples
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/labview-bootcamp-learn-labview-with-practical-examples/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Sensor to DAQ/MCU; USB/TCP to PC running LabVIEW.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- Sensor -> MCU/DAQ ---- USB/TCP ---- PC (LabVIEW)
-```
-
-## Purchase With Discount
-
-Get a discounted price and build practical LabVIEW projects — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
